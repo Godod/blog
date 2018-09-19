@@ -1,0 +1,143 @@
+baseurl = "http://localhost"
+title = "Denys Tovstohan blog"
+
+languagecode = "en"
+
+publishDir = "docs"
+
+paginate = 20
+canonifyurls = true
+
+pygmentsstyle = "b2"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+copyright = "Denys Tovstohan"
+
+# disqusShortname = "yourdiscussshortname"
+
+[params]
+    author = "Denys Tovstohan"
+    description = "Denys Tovstohan's developer blog"
+    keywords = "blog,developer,personal,python,js,hater,css,postgresql,idler,mysql,devops"
+    info = "Full Stack Coder and Bug Finder"
+    avatarurl = "images/avatar.jpg"
+    footercontent = "Hello, World!"
+
+    dateformat = "January 2, 2006"
+
+    hideCredits = false
+    hideCopyright = false
+
+    rtl = false
+
+    # Custom CSS
+    custom_css = []
+
+[[params.social]]
+    name = "Github"
+    icon = "fab fa-github"
+    weight = 1
+    url = "https://github.com/Godod/"
+[[params.social]]
+    name = "Gitlab"
+    icon = "fab fa-gitlab"
+    weight = 2
+    url = "https://gitlab.com/Godod/"
+[[params.social]]
+    name = "Twitter"
+    icon = "fab fa-twitter"
+    weight = 3
+    url = "https://twitter.com/LastGodod/"
+[[params.social]]
+    name = "LinkedIn"
+    icon = "fab fa-linkedin"
+    weight = 4
+    url = "https://www.linkedin.com/in/denys-tovstohan-22545450/"
+
+[[menu.main]]
+    name = "Blog"
+    weight = 1
+    url  = "/posts/"
+[[menu.main]]
+    name = "About"
+    weight = 2
+    url = "/about/"
+[[menu.main]]
+    name = "Projects"
+    weight = 3
+    url = "/projects/"
+[[menu.main]]
+    name = "Contact me"
+    weight = 5
+    url = "/contact/"
+
+[languages]
+    [languages.en]
+        languagename = "English" # The language name to be displayed in the selector.
+        title = "Denys Tovstohan blog"
+        contentDir = "content/en"
+
+        # You can configure the theme parameter for each language.
+        [languages.en.params]
+            author = "Denys Tovstohan"
+            info = "Full Stack Coder and Bug Finder"
+            description = "Denys Tovstohan's developer blog"
+            keywords = "blog,developer,personal,python,js,hater,css,postgresql,idler,mysql,devops"
+
+        [languages.en.menu] # It is possible to change the menu too.
+
+        [[languages.en.menu.main]]
+            name = "About"
+            weight = 1.0
+            url = "/about/"
+
+        [[languages.en.menu.main]]
+            name = "Blog"
+            weight = 2.0
+            url = "/posts/"
+
+        [[languages.en.menu.main]]
+            name = "Projects"
+            weight = 3
+            url = "/projects/"
+
+        [[languages.en.menu.main]]
+            name = "Contact me"
+            weight = 5
+            url = "/contact/"
+
+
+    [languages.ua]
+        languagename = "Українською"
+        title = "Денис Товстоган блог"
+        contentDir = "content/ua"
+
+        [languages.ua.params]
+            author = "Денис Товстоган"
+            description = "Блог розробника Дениса"
+            keywords = "blog,developer,personal,python,js,рішучий,css,postgresql,ледар,mysql,devops"
+            info = "Full Stack Розробник і Шукач Багів"
+
+        [languages.ua.menu]
+
+            [[languages.ua.menu.main]]
+                name = "О мені"
+                weight = 1.0
+                url = "/ua/about/"
+
+            [[languages.ua.menu.main]]
+                name = "Блог"
+                weight = 2.0
+                url = "/ua/posts/"
+
+            [[languages.ua.menu.main]]
+                name = "Проекти"
+                weight = 3
+                url = "/ua/projects/"
+
+            [[languages.ua.menu.main]]
+                name = "Контакти"
+                weight = 5
+                url = "/ua/contact/"
+

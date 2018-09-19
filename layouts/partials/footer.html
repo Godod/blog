@@ -1,0 +1,15 @@
+<footer class="footer">
+  <section class="container">
+    {{ with .Site.Params.footercontent }}
+      <p>{{.}}</p>
+    {{ end }}
+    {{ if not .Site.Params.hideCopyright }}
+      © 2018
+    {{ end }}
+    {{ if not .Site.Params.hideCredits}}
+      {{ if not .Site.Params.hideCopyright }}
+        {{ .Site.Copyright }}.
+      {{ end }}
+    {{ end }}
+  </section>
+</footer>
