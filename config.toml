@@ -3,8 +3,6 @@ title = "Denys Tovstohan blog"
 
 languagecode = "en"
 
-publishDir = "docs"
-
 paginate = 20
 canonifyurls = true
 
