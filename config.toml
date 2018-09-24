@@ -1,5 +1,5 @@
 baseurl = "https://godod.github.io"
-title = "Denys Tovstohan blog"
+title = "Bug Finder blog"
 
 languagecode = "en"
 
@@ -73,7 +73,7 @@ copyright = "Denys Tovstohan"
 [languages]
     [languages.en]
         languagename = "English" # The language name to be displayed in the selector.
-        title = "Denys Tovstohan blog"
+        title = "Bug Finder blog"
         contentDir = "content/en"
 
         # You can configure the theme parameter for each language.
@@ -108,7 +108,7 @@ copyright = "Denys Tovstohan"
 
     [languages.ua]
         languagename = "Українською"
-        title = "Денис Товстоган блог"
+        title = "Блог Шукача Багів"
         contentDir = "content/ua"
 
         [languages.ua.params]
