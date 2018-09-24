@@ -1,0 +1,35 @@
+<section class="container projects">
+    <h1 class="title">{{ .Title }}</h1>
+
+    <div id="project-list">
+    {{ range .Paginator.Pages }}
+
+    <div class="project">
+      <a href={{ .URL }}>
+          <img src="images/{{ .Params.image }}" alt="{{ .Title }}" />
+      </a>
+    </div>
+    
+    {{ end }}
+    </div>
+
+  {{ partial "pagination.html" . }}
+
+  <script type="text/javascript" src="//cdn.polyfill.io/v2/polyfill.min.js"></script>
+  <script type="text/javascript" src="js/macy.js"></script>
+  <script type="text/javascript" async>
+    var macy = Macy({
+      container: '#project-list',
+      trueOrder: false,
+      waitForImages: false,
+      margin: 24,
+      columns: 2,
+      breakAt: {
+         1200: 2,
+         940: 1,
+         520: 1,
+         400: 1
+      }
+    });
+  </script>
+</section>
