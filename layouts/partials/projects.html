@@ -1,21 +1,32 @@
 <section class="container projects">
-    <h1 class="title">{{ .Title }}</h1>
+  <h1 class="title">{{ .Title }}</h1>
 
-    <div id="project-list">
+  <div id="project-list">
     {{ range .Paginator.Pages }}
 
-    <div class="project">
-      <a href={{ .URL }}>
-          <img src="images/{{ .Params.image }}" alt="{{ .Title }}" />
-      </a>
-    </div>
-    
+      <figure class="imghvr-shutter-out-diag-1 project">
+        <img src="images/{{ .Params.image }}" alt="{{ .Title }}">
+
+        <figcaption>
+          <h5>{{ .Title }}</h5>
+
+          <div class="chips">
+            {{ range .Params.technologies }}
+              <div class="chip">{{ . }}</div>
+            {{ end }}
+          </div>
+
+        </figcaption>
+
+        <a href="{{ .URL }}"></a>
+      </figure>
+
     {{ end }}
-    </div>
+  </div>
 
   {{ partial "pagination.html" . }}
 
-  <script type="text/javascript" src="//cdn.polyfill.io/v2/polyfill.min.js"></script>
+  <script type="text/javascript" src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
   <script type="text/javascript" src="js/macy.js"></script>
   <script type="text/javascript" async>
     var macy = Macy({

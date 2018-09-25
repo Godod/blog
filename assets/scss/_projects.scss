@@ -20,4 +20,40 @@
       }
     }
   }
+
+  [class^='imghvr-'],
+  [class*=' imghvr-'] {
+    background-color: rgba(23, 20, 33, 0.9);
+
+    figcaption {
+      background-color: rgba(23, 20, 33, 0.9);
+      flex-direction: column;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  [class*=' imghvr-shutter-in-']:after,
+  [class*=' imghvr-shutter-in-']:before,
+  [class^=imghvr-shutter-in-]:after,
+  [class^=imghvr-shutter-in-]:before {
+    background-color: rgba(23, 20, 33, 0.8);
+  }
+
+  .chips {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  .chip {
+    padding: 0 12px;
+    margin: 5px;
+    height: auto;
+    font-size: 10px;
+    border-radius: 15px;
+    background-color: #f1f1f1;
+    color: #000;
+  }
 }
