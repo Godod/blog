@@ -29,6 +29,9 @@ copyright = "Denys Tovstohan"
 
     rtl = false
 
+    favicon_16 = "/images/favicon-16x16.ico"
+    favicon_32 = "/images/favicon-32x32.ico"
+
     # Custom CSS
     custom_css = ["https://cdnjs.cloudflare.com/ajax/libs/imagehover.css/1.0/css/imagehover.min.css"]
 
